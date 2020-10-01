@@ -1,0 +1,71 @@
+<html>
+<head>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/frontend/static/style.css">
+<link rel="shortcut icon" href="https://hosting.gatech.edu/sites/all/themes/gt_subtheme/favicon.ico" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap">
+<title>Genome Assembly</title>
+
+</head>
+
+<body>
+
+<!-- hyperlinks-->
+<div class = 'menu'>
+ <a href='/'>Home</a>
+    <a href="https://canvas.gatech.edu/">Tutorial</a>
+    <a href="https://github.gatech.edu/compgenomics2020/Team3-WebServer">GitHub</a>
+    <a href="https://compgenomics2020.biosci.gatech.edu/Team_III_Webserver_Group">Wiki</a>
+    <a href="/AboutUs">About Us</a>
+</div>
+
+<div class = 'heading'>
+    <h1>Genome Assembly</h1>
+</div>
+
+<form class = 'input' action='/Genome_Assembly' method="post" enctype="multipart/form-data"'>
+    <div class = 'input'>
+        <h2>Input Data</h2>
+        <p>Input paired-end sequence data for assembly. Upload all files in FASTQ format. 
+        Label the read 1 and read 2 files for each sample with the same sample ID, and label
+        all read 1 files with '_1.fq' and all read 2 files with '_2.fq all reads must be in zipped folder ".gz"'.</p>
+        <label>Isolate Genome(s)</label><br>
+        <input type="file" id="file1" name="file1"></input>
+        <p>Select up to 100 files.</p>
+    </div>
+    
+    <div class = 'job_info'>
+        <h2>Assembly Options</h2>
+        <input type="checkbox" name="needs_trimming">
+        <label for="needs_trimming"> Perform trimming on these FASTQ files.</label><br>
+        <div class = 'user_info'>
+            <h2>User Information</h2>
+            <label>Name:</label>
+            <input type="text" id="assem_name" name="assem_name"/></input><br>
+            <label>Email:</label>
+            <input type="text" id="email" name="assem_email"/></input><br>
+            <label>Job Name:</label>
+            <input type="text" id="assem_job" name="assem_job"/></input>
+        </div>
+        <div class = 'tool_choice'>
+            <h2>Assembler</h2>
+            <p>Select an assembler to use:</p>
+            <input type="radio" name="spades" checked>
+            <label for="SPADES"> SPAdes</label><br>
+            <input type="radio" name="skesa">
+            <label for="SKESA"> SKESA</label><br>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <div class = 'description'>
+    </div>
+</div>
+
+</body>
+</html>

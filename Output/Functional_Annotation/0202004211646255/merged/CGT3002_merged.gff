@@ -1,0 +1,82 @@
+##sequence_region NODE_3_length_88635_cov_22.765500:33251-33848
+NODE_3_length_88635_cov_22.765500:33251-33848	VFDB	protein_match	1	597	0.0	+	.	stitle=VFG000077(gb|NP_465991) (clpP) ATP-dependent Clp protease proteolytic subunit [ClpP (VF0074)] 
+##sequence_region NODE_3_length_88635_cov_22.765500:35519-36671
+NODE_3_length_88635_cov_22.765500:35519-36671	VFDB	protein_match	1	1152	0.0	+	.	stitle=VFG049468(gb|NP_465993.1) (inlP) internalin P [InlP (VF0577)] [Listeria monocytogenes EGD-e]
+##sequence_region NODE_3_length_88635_cov_22.765500:35552-36671
+NODE_3_length_88635_cov_22.765500:35552-36671	VFDB	protein_match	2	1119	0.0	+	.	stitle=VFG049468(gb|NP_465993.1) (inlP) internalin P [InlP (VF0577)] [Listeria monocytogenes EGD-e]
+##sequence_region NODE_5_length_81040_cov_22.748731:2154-4617
+NODE_5_length_81040_cov_22.748731:2154-4617	VFDB	protein_match	1	2463	0.0	+	.	stitle=VFG000079(gb|NP_463763) (clpC) endopeptidase Clp ATP-binding chain C [ClpC (VF0072)] 
+##sequence_region NODE_9_length_65086_cov_22.766019:31574-33287
+NODE_9_length_65086_cov_22.766019:31574-33287	VFDB	protein_match	1	1713	0.0	+	.	stitle=VFG002160(gb|NP_465354) (fbpA) fibronectin-binding protein [FbpA (VF0349)] [Listeria 
+##sequence_region NODE_9_length_65086_cov_22.766019:47857-48322
+NODE_9_length_65086_cov_22.766019:47857-48322	VFDB	protein_match	1	465	0.0	-	.	stitle=VFG002161(gb|NP_465369) (lspA) signal peptidase II [Lsp (VF0351)] [Listeria monocytogenes 
+##sequence_region NODE_9_length_65086_cov_22.766019:51246-51831
+NODE_9_length_65086_cov_22.766019:51246-51831	VFDB	protein_match	1	585	0.0	-	.	stitle=VFG002157(gb|NP_465372) (lpeA) lipoprotein promoting cell invasion [LpeA (VF0346)] [Listeria 
+##sequence_region NODE_9_length_65086_cov_22.766019:51246-51876
+NODE_9_length_65086_cov_22.766019:51246-51876	VFDB	protein_match	1	630	0.0	-	.	stitle=VFG002157(gb|NP_465372) (lpeA) lipoprotein promoting cell invasion [LpeA (VF0346)] [Listeria 
+##sequence_region NODE_9_length_65086_cov_22.766019:51900-52179
+NODE_9_length_65086_cov_22.766019:51900-52179	VFDB	protein_match	5	279	6e-125	-	.	stitle=VFG002157(gb|NP_465372) (lpeA) lipoprotein promoting cell invasion [LpeA (VF0346)] [Listeria 
+##sequence_region NODE_11_length_59850_cov_22.771151:37111-38089
+NODE_11_length_59850_cov_22.771151:37111-38089	VFDB	protein_match	1	978	0.0	-	.	stitle=VFG002162(gb|NP_465591) (bsh) bile salt hydrolase [BSH (VF0350)] [Listeria monocytogenes 
+##sequence_region NODE_11_length_59850_cov_22.771151:37111-38122
+NODE_11_length_59850_cov_22.771151:37111-38122	VFDB	protein_match	1	978	0.0	-	.	stitle=VFG002162(gb|NP_465591) (bsh) bile salt hydrolase [BSH (VF0350)] [Listeria monocytogenes 
+##sequence_region NODE_12_length_50793_cov_22.723718:47074-48961
+NODE_12_length_50793_cov_22.723718:47074-48961	VFDB	protein_match	1	1887	0.0	+	.	stitle=VFG032992(gb|NP_464816) (oatA) peptidoglycan O-acetyltransferase [OatA (VF0441)] [Listeria 
+##sequence_region NODE_12_length_50793_cov_22.723718:48993-50793
+NODE_12_length_50793_cov_22.723718:48993-50793	VFDB	protein_match	1	1800	0.0	-	.	stitle=VFG032936(gb|NP_464815) (inlK) internalin K [InlK (VF0439)] [Listeria monocytogenes EGD-e]
+##sequence_region NODE_25_length_38022_cov_22.866884:5478-7791
+NODE_25_length_38022_cov_22.866884:5478-7791	VFDB	protein_match	1	1127	0.0	+	.	stitle=VFG000078(gb|NP_466081) (ami) autolysin amidase, adhesin [Ami (VF0071)] [Listeria monocytogenes 
+##sequence_region NODE_28_length_35935_cov_22.731800:13138-14539
+NODE_28_length_35935_cov_22.731800:13138-14539	VFDB	protein_match	1	1401	0.0	-	.	stitle=VFG033025(gb|NP_463944) (pdgA) Peptidoglycan N-deacetylase [PgdA (VF0442)] [Listeria 
+##sequence_region NODE_28_length_35935_cov_22.731800:19924-22330
+NODE_28_length_35935_cov_22.731800:19924-22330	VFDB	protein_match	1	2406	0.0	-	.	stitle=VFG032821(gb|NP_463939) (inlF) internalin F [InlF (VF0447)] [Listeria monocytogenes EGD-e]
+##sequence_region NODE_28_length_35935_cov_22.731800:19924-22396
+NODE_28_length_35935_cov_22.731800:19924-22396	VFDB	protein_match	1	2472	0.0	-	.	stitle=VFG032821(gb|NP_463939) (inlF) internalin F [InlF (VF0447)] [Listeria monocytogenes EGD-e]
+##sequence_region NODE_31_length_33028_cov_23.024111:18635-23774
+NODE_31_length_33028_cov_23.024111:18635-23774	VFDB	protein_match	1	5139	0.0	+	.	stitle=VFG032762(gb|NP_465191) (lapB) Listeria adhesion protein LapB [LapB (VF0446)] [Listeria 
+##sequence_region NODE_38_length_28310_cov_22.704619:22381-23263
+NODE_38_length_28310_cov_22.704619:22381-23263	VFDB	protein_match	1	882	0.0	+	.	stitle=VFG032878(gb|NP_465743) (prsA2) post translocation chaperone PrsA2 [PrsA2 (VF0449)] [Listeria 
+##sequence_region NODE_39_length_27877_cov_23.386241:985-3379
+NODE_39_length_27877_cov_23.386241:985-3379	VFDB	protein_match	1	2394	0.0	+	.	stitle=VFG000075(gb|NP_463962) (inlA) Internalin A [InlA (VF0069)] [Listeria monocytogenes EGD-e]
+##sequence_region NODE_39_length_27877_cov_23.386241:3463-5356
+NODE_39_length_27877_cov_23.386241:3463-5356	VFDB	protein_match	1	1891	0.0	+	.	stitle=VFG000076(gb|NP_463963) (inlB) Internalin B [InlB (VF0070)] [Listeria monocytogenes EGD-e]
+##sequence_region NODE_39_length_27877_cov_23.386241:7055-7673
+NODE_39_length_27877_cov_23.386241:7055-7673	VFDB	protein_match	1	618	0.0	+	.	stitle=VFG032965(gb|NP_463967) (lntA) listeria nuclear targeted protein A [LntA (VF0440)] [Listeria 
+##sequence_region NODE_44_length_26449_cov_22.751686:23595-26196
+NODE_44_length_26449_cov_22.751686:23595-26196	VFDB	protein_match	1	2601	0.0	-	.	stitle=VFG006717(gb|NP_465159) (lap) Listeria adhesion protein Lap [Lap (VF0444)] [Listeria 
+##sequence_region NODE_47_length_24518_cov_22.749622:141-1674
+NODE_47_length_24518_cov_22.749622:141-1674	VFDB	protein_match	1	1533	0.0	+	.	stitle=VFG000071(gb|NP_463734) (mpl) Zinc metalloproteinase precursor [Mpl (VF0065)] [Listeria 
+##sequence_region NODE_47_length_24518_cov_22.749622:1873-3793
+NODE_47_length_24518_cov_22.749622:1873-3793	VFDB	protein_match	1	1915	0.0	+	.	stitle=VFG000068(gb|NP_463735) (actA) actin-assembly inducing protein precursor [ActA (VF0066)] 
+##sequence_region NODE_47_length_24518_cov_22.749622:3828-4698
+NODE_47_length_24518_cov_22.749622:3828-4698	VFDB	protein_match	2	870	0.0	+	.	stitle=VFG000069(gb|NP_463736) (plcB) phospholipase C [PlcB (VF0067)] [Listeria monocytogenes 
+##sequence_region NODE_53_length_20152_cov_22.746679:10925-13676
+NODE_53_length_20152_cov_22.746679:10925-13676	VFDB	protein_match	1	1860	0.0	+	.	stitle=VFG006721(gb|NP_466343) (inlJ) internalin J [InlJ (VF0445)] [Listeria monocytogenes EGD-e]
+##sequence_region NODE_57_length_19578_cov_22.695129:12610-13867
+NODE_57_length_19578_cov_22.695129:12610-13867	VFDB	protein_match	1	921	0.0	+	.	stitle=VFG006768(gb|NP_463850) (vip) surface adhesin Vip [Vip (VF0443)] [Listeria monocytogenes 
+##sequence_region NODE_58_length_18756_cov_22.814716:2-2156
+NODE_58_length_18756_cov_22.814716:2-2156	VFDB	protein_match	1	2154	0.0	+	.	stitle=VFG000080(gb|NP_464522) (clpE) ATP-dependent protease [ClpE (VF0073)] [Listeria monocytogenes 
+##sequence_region NODE_64_length_16583_cov_23.336338:6291-7185
+NODE_64_length_16583_cov_23.336338:6291-7185	VFDB	protein_match	1	891	0.0	-	.	stitle=VFG032910(gb|NP_465311) (inlC) internalin C [InlC (VF0438)] [Listeria monocytogenes EGD-e]
+##sequence_region NODE_77_length_10896_cov_22.650770:5368-6778
+NODE_77_length_10896_cov_22.650770:5368-6778	VFDB	protein_match	1	1410	0.0	-	.	stitle=VFG000070(gb|NP_464110) (iap/cwhA) P60 extracellular protein, invasion associated protein 
+##sequence_region NODE_78_length_10573_cov_22.708690:5038-6424
+NODE_78_length_10573_cov_22.708690:5038-6424	VFDB	protein_match	1	1386	0.0	-	.	stitle=VFG001089(gb|NP_464364) (hpt) hexose phosphate transport protein [Hpt (VF0264)] [Listeria 
+##sequence_region NODE_85_length_8480_cov_24.904570:3002-3998
+NODE_85_length_8480_cov_24.904570:3002-3998	VFDB	protein_match	1	996	0.0	-	.	stitle=VFG002158(gb|NP_464456) (lplA1) lipoate protein ligase [LplA1 (VF0347)] [Listeria monocytogenes 
+##sequence_region NODE_89_length_7466_cov_22.570503:94-1684
+NODE_89_length_7466_cov_22.570503:94-1684	VFDB	protein_match	1	1590	0.0	-	.	stitle=VFG000074(gb|NP_463733) (hly) listeriolysin O precursor [LLO (VF0064)] [Listeria monocytogenes 
+##sequence_region NODE_89_length_7466_cov_22.570503:1926-2880
+NODE_89_length_7466_cov_22.570503:1926-2880	VFDB	protein_match	1	954	0.0	+	.	stitle=VFG000073(gb|NP_463732) (plcA) phosphatidylinositol-specific phospholipase c [PlcA (VF0063)] 
+##sequence_region NODE_89_length_7466_cov_22.570503:3152-3866
+NODE_89_length_7466_cov_22.570503:3152-3866	VFDB	protein_match	1	714	0.0	+	.	stitle=VFG000072(gb|NP_463731) (prfA) listeriolysin positive regulatory protein [PrfA (VF0062)] 
+##sequence_region NODE_118_length_2250_cov_23.339863:237-1125
+NODE_118_length_2250_cov_23.339863:237-1125	VFDB	protein_match	1	888	0.0	+	.	stitle=VFG045332(gb|AHK25017) (llsG) ABC transporter ATP-binding protein LlsG [LLS (VF0410)] 
+##sequence_region NODE_118_length_2250_cov_23.339863:1124-1874
+NODE_118_length_2250_cov_23.339863:1124-1874	VFDB	protein_match	1	750	0.0	+	.	stitle=VFG045333(gb|AHK25018) (llsH) ABC transporter permease protein LlsH [LLS (VF0410)] [Listeria 
+##sequence_region NODE_118_length_2250_cov_23.339863:1914-2232
+NODE_118_length_2250_cov_23.339863:1914-2232	VFDB	protein_match	1	318	2e-155	+	.	stitle=VFG045334(gb|AHK25019) (llsX) LlsX [LLS (VF0410)] [Listeria innocua SLCC6294]
+##sequence_region NODE_132_length_660_cov_25.023140:1-658
+NODE_132_length_660_cov_25.023140:1-658	VFDB	protein_match	1	657	0.0	-	.	stitle=VFG045337(gb|AHK25022) (llsD) streptolysin-associated protein LlsD [LLS (VF0410)] [Listeria 
+##sequence_region NODE_133_length_653_cov_26.065217:172-652
+NODE_133_length_653_cov_26.065217:172-652	VFDB	protein_match	1	480	0.0	-	.	stitle=VFG045337(gb|AHK25022) (llsD) streptolysin-associated protein LlsD [LLS (VF0410)] [Listeria 

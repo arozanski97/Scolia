@@ -1,0 +1,76 @@
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="/frontend/static/style.css">
+<link rel="shortcut icon" href="https://hosting.gatech.edu/sites/all/themes/gt_subtheme/favicon.ico" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<style>
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Condensed', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+     animation: bounceIn 2s;
+}
+
+h2 {
+    font-size: 20px;
+    color: #d8c6be;
+}
+
+</style>
+<title>SCOLiA Home</title>
+
+</head>
+
+<body>
+
+<!-- hyperlinks-->
+<div class = 'menu'>
+    <a href='/'>Home</a>
+    <a href="https://canvas.gatech.edu/">Tutorial</a>
+    <a href="https://github.gatech.edu/compgenomics2020/Team3-WebServer">GitHub</a>
+    <a href="https://compgenomics2020.biosci.gatech.edu/Team_III_Webserver_Group">Wiki</a>
+    <a href="/AboutUs">About Us</a>
+</div>
+
+<!-- heading-->
+<div class = 'heading'>
+    <div class = 'mainhead'></div>
+    <h1>SCOLiA</h1><br>
+    <h2>Subtyping and Comparison Of Listeria Assemblies</h2>
+    <div class = 'mainhead'></div>
+</div>
+
+<!-- main contents-->
+<div class = 'workspace'></div>
+    <p style="text-align:center">
+        <a href="/genomeassembly" class = 'btn'>Genome Assembly</a>
+        <a href="/geneprediction" class = 'btn'>Gene Prediction</a>
+        <a href="/func-ann" class = 'btn'>Functional Annotation</a>
+        <a href="/comp-gen" class = 'btn'>Comparative Genomics</a>
+    </p>
+    <div class="text-center">
+    <a href="/" class = 'btn btn-outline-primary'>Complete Pipeline</a>
+    </div>
+</div>
+        
+
+
+</body>
+
+<script>
+    function toGenomeAssembly() {
+window.location.replace(window.location.protocol  + "//"  + window.location.host + "/genomeassembly");
+}
+    function toFunctional() {
+window.location.replace(window.location.protocol  + "//"  + window.location.host + "/functional");
+}
+</script>
+</html>

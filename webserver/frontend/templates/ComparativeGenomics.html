@@ -1,0 +1,81 @@
+<html>
+<head>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/frontend/static/style.css">
+<link rel="shortcut icon" href="https://hosting.gatech.edu/sites/all/themes/gt_subtheme/favicon.ico" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap">
+<title>Comparative Genomics</title>
+
+</head>
+
+<body>
+
+<!-- hyperlinks-->
+<div class = 'menu'>
+ <a href='/'>Home</a>
+    <a href="https://canvas.gatech.edu/">Tutorial</a>
+    <a href="https://github.gatech.edu/compgenomics2020/Team3-WebServer">GitHub</a>
+    <a href="https://compgenomics2020.biosci.gatech.edu/Team_III_Webserver_Group">Wiki</a>
+    <a href="/AboutUs">About Us</a>
+</div>
+
+<!-- heading-->
+<div class = 'heading'>
+    <h1>Comparative Genomics</h1>
+</div>
+
+<!-- main contents-->
+<form class = 'input' action='/Comparative_Genomics' method="post" enctype="multipart/form-data">
+    <div class = 'input'>
+        <h2>Input Data</h2>
+        <p>Input reference and query files below. Upload all files in FASTA format.</p>
+        
+        <div class = 'input'>
+            <label>Query Genome(s)</label><br>
+            <input type="file" id="file1" name="file1"></input>
+            <p>Select up to 100 files.</p>
+        </div>
+        
+        <div class = 'input'>
+            <label>Reference Genome</label><br>
+            <input type="file" id="file2" name="file2"/></input>
+            <p>Select 1 file or run against default reference genome.</p>
+        </div>
+    </div>
+    
+    <div class = 'input'>
+        <div class = 'user_info'>
+            <h2>User Information</h2>
+            <label>Name:</label>
+            <input type="text" id="comp_name" name="comp_name"/></input><br>
+            <label>Email:</label>
+            <input type="text" id="comp_email" name="comp_email"/></input><br>
+            <label>Job Name:</label>
+            <input type="text" id="comp_job" name="comp_job"/></input>
+        </div>
+        <div class = 'input'>
+            <h2>Tool Selection</h2>
+            <input type="radio" name="fast_ani" checked>
+            <label for="FAST-ANI"> FAST-ANI</label><br>
+            <input type="radio" name="string_mlst">
+            <label for="StringMLST"> StringMLST</label><br>
+            <input type="radio" name="ksnp">
+            <label for="kSNP"> kSNP</label><br>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    
+    
+    <div class = 'description'>
+    
+    </div>
+</form>
+
+</body>
+</html>
