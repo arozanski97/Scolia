@@ -1,7 +1,6 @@
 import asyncio
 from os import path
 from flask import Blueprint, Response
-#from webserver import create_app
 import os
 import urllib.request
 from flask import Flask, request, redirect, jsonify
@@ -13,8 +12,6 @@ from multiprocessing import Pool
 import time
 import subprocess
 from flask_mail import Mail, Message
-#from webserver import mail
-#print(mail)
 from webserver.backend import models 
 from webserver.backend import db_util 
 from webserver.backend import email_util
@@ -28,17 +25,11 @@ from webserver.backend import gene_prediction
 ALLOWED_EXTENSIONS = set(['gz'])
 ALLOWED_EXTENSIONS2 = set(['fasta', 'fna'])
 
-#from celery import Celery
-#current_app.config['CELERY_BROKER_URL'] = 'redis://localhost:5000/0'
-#current_app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:5000/0'
-
-#celery = Celery(current_app.name, broker=current_app.config['CELERY_BROKER_URL'])
-#celery.conf.update(current_app.config)
 
 UPLOAD_FOLDER = './Input/'
 
 BASE_OUTPUT_PATH = './Output/'
-#mail=Mail(current_app)
+
 current_app.config.update(
         DEBUG=True,
         MAIL_SERVER="smtp.gmail.com",
@@ -55,14 +46,10 @@ pipeline_dict = {1:'Genome_Assembly', 2:'Gene_Prediction', 3:'Functional_Annotat
 mod=Blueprint('backend',__name__)
 
 def allowed_file(filename):
-    #print(filename.rsplit('.', 1)[1].lower())
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 def allowed_file2(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS2
-"""
-def allowed_format(filename):
-        return
-"""
+
 def generate_job_id():
     r1 = randint(0,9)
     r3 = randint(0,9)
@@ -76,11 +63,7 @@ def backend_assembly(new_filename, user_email, pipeline_num, tools, file1_locati
     print("running assembly back_end.....")
     print("tools are " + str (tools))
     flag = 0
-	# MAKE OUTPUT PATH SPECIFIC FOR YOUR TOOL THIS IS JUST A TEST OUTPUT PATH
-    #subprocess.run("mkdir " + BASE_OUTPUT_PATH + "Genome_Assembly/" + new_filename, shell=True)
-    #output_path = BASE_OUTPUT_PATH + "Genome_Assembly/" + new_filename + ".tar.gz"
-    #print("this is the output_path"+output_path)
-	# THIS IS JUST AN EXAMPLE FUNCTION
+    # MAKE OUTPUT PATH SPECIFIC FOR YOUR TOOL THIS IS JUST A TEST OUTPUT PATH
     pool.apply_async(genomeassembly.f, (file1_location, flag, download_folder, tools))
     if flag == 0:
     	c1 = db_util.scolia_data(job_id=new_filename, email=user_email, job_submitted=0, email_sent=0,pipeline_number=pipeline_num)
@@ -104,9 +87,7 @@ def backend_prediction(new_filename, user_email,pipeline_num,tools,file1_locatio
 @mod.route('/backend_function')
 def backend_function(new_filename, user_email,pipeline_num,tools,file1_location,download_folder):
     print(tools)
-    flag=0
-    #subprocess.run("mkdir "+BASE_OUTPUT_PATH+"Functional_Annotation/"+new_filename, shell = True)
-    #output_path=BASE_OUTPUT_PATH+"Functional_Annotation/"+new_filename+".tar.gz" 
+    flag=0 
     pool.apply_async(functional_annotation_pipeline.f,(file1_location,download_folder,flag,))
     if flag == 0:
     	c1 = db_util.scolia_data(job_id = new_filename, email = user_email ,job_submitted = 0, email_sent = 0, pipeline_number = pipeline_num)
@@ -209,9 +190,6 @@ def backend_setup(files,user_email,pipeline_num,tools):
     		completed=subprocess.run(["mkdir",DOWNLOAD_FOLDER+new_filename], stdout=subprocess.PIPE,)
     		print('returncode:', completed.returncode)
     		print('Have {} bytes in stdout:\n{}'.format(len(completed.stdout),completed.stdout.decode('utf-8')))
-    		#completed=subprocess.run(["mkdir",DOWNLOAD_FOLDER+new_filename], stdout=subprocess.PIPE,)
-    		#print('returncode:', completed.returncode)
-    		#print('Have {} bytes in stdout:\n{}'.format(len(completed.stdout),completed.stdout.decode('utf-8')))
     		completed=subprocess.run(["mv",UPLOAD_FOLDER+file1.filename,UPLOAD_FOLDER+new_filename+"/"], stdout=subprocess.PIPE,)
     		print('returncode:', completed.returncode)
     		print('Have {} bytes in stdout:\n{}'.format(len(completed.stdout),completed.stdout.decode('utf-8')))
@@ -246,7 +224,6 @@ def download_processed_files():
     file_path = "."+BASE_OUTPUT_PATH+pipeline_dict.get(pipeline_number)+"/"+job_id+".tar.gz"
     file_path_delete=BASE_OUTPUT_PATH+pipeline_dict.get(pipeline_number)+"/"+job_id+".tar.gz"
     print(file_path)
-    #pool3.apply_async(delete_downloads.f,(file_path_delete,int(job_id),))
     if path.exists(file_path_delete):
     	return send_file(file_path, as_attachment=True)
     else:
